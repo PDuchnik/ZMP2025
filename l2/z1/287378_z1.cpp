@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
-#include <vector>
-#include <string>
+
 
 int nwd(int a, int b){
     while(b!=0){
@@ -14,7 +13,7 @@ int nwd(int a, int b){
 
 int main(){ 
     int length = 0;
-    vector<int> numbers;
+    int* numbers;
     for(int i = -1; i < length; i++){
         if(i == -1){
             cin >> length;
@@ -22,7 +21,7 @@ int main(){
         else{
             int n;
             cin >> n;
-            numbers.push_back(n);
+            numbers[i] = n;
         }
     }
     int res = nwd(numbers[0], numbers[1]);
