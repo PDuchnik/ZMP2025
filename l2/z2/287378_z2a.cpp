@@ -6,19 +6,11 @@ using namespace std;
 int main(){
     int length = 0;
     int x;
-    vector<int> numbers;
+    int* numbers;
     int buffer;
-    for(int i = -2; i < length; i++){
-        cin >> buffer;
-        if (i == -2){
-            x = buffer;
-        }
-        else if(i == -1){
-            length = buffer;
-        }
-        else{
-            numbers.push_back(buffer);
-        }
+    cin >> x >> length;
+    for(int i = 0; i < length; i++){
+        cin >> numbers[i];
     }
     bool flag = false;
     for(int i = 0; i < length; i++){
