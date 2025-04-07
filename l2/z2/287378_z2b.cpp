@@ -3,11 +3,15 @@ using namespace std;
 #include "math.h"
 
 int main(){
-    int length = 0;
+    int length;
     int x;
-    int* numbers;
+    int numbers[1000];
     int buffer;
-    cin >> x >> length;
+    cout << "Podaj szukana liczbe:" << endl;
+    cin >> x;
+    cout << "Podaj dlugosc ciagu:" << endl;
+    cin >> length;
+    cout << "Podaj ciag:" << endl;
     for(int i = 0; i < length; i++){
         cin >> numbers[i];
     }
