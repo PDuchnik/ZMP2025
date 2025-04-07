@@ -12,17 +12,12 @@ int nwd(int a, int b){
 }
 
 int main(){ 
-    int length = 0;
-    int* numbers;
-    for(int i = -1; i < length; i++){
-        if(i == -1){
-            cin >> length;
-        }
-        else{
-            int n;
-            cin >> n;
-            numbers[i] = n;
-        }
+    int length;
+    int numbers[1000];
+    cout << "Podaj dlugosc ciagu:" << endl;
+    cin >> length;
+    for (int i = 0; i < length; i++){
+        cin >> numbers[i];
     }
     int res = nwd(numbers[0], numbers[1]);
     for(int i = 2; i < length; i++){
