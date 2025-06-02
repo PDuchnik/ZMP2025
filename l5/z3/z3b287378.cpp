@@ -3,6 +3,19 @@ using namespace std;
 
 int max_value;
 
+int min_c(int a, int b){
+    if(a < b){
+        return a;
+    }
+    else return b;
+}
+int max_c(int a, int b){
+    if (a > b){
+        return a;
+    }
+    else return b;
+}
+
 void copy(int destination[], int source[], int n, int dest_start, int src_start){
     for (int i = 0; i < n; i++){
         destination[i + dest_start] = source[i + src_start];
@@ -39,8 +52,8 @@ void merge_sort(int s[], int n){
             int merged_s[1000];
             int sub1[1000];
             int sub2[1000];
-            int l1 = max(0, min(k, n-i));
-            int l2 = max(0, min(k, n-(i+k)));
+            int l1 = max_c(0, min_c(k, n-i));
+            int l2 = max_c(0, min_c(k, n-(i+k)));
             copy(sub1, s, l1, 0, i);
             copy(sub2, s, l2, 0, i+k);
             if(sub2[l2-1] - sub1[0] > max_value) max_value = sub2[l2 - 1] - sub1[0];
