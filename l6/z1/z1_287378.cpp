@@ -11,8 +11,8 @@ struct Node{
 
 bool BubbleSort(Node* Start){
     if(Start->value>Start->next->value){
-        auto debug = Start;
-        auto temp = Start->value;
+        Node* debug = Start;
+        int temp = Start->value;
         Start->value = Start->next->value;
         Start->next->value = temp;
 
