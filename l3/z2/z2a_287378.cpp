@@ -41,4 +41,5 @@ int main(){
         }
         print_set(subset, subset_end);
     }
+    cout << "empty" << endl;
 }
