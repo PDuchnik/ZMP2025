@@ -2,6 +2,14 @@
 #include <math.h>
 using namespace std;
 
+int pow(int base, int power){
+    int res = 1;
+    for (int i = 0; i < power; i++){
+        res *= base;
+    }
+    return res;
+}
+
 void print_set(int* set, int n){
     for (int i = 0; i < n; i++){
         cout << set[i] << " ";
@@ -23,7 +31,7 @@ int main(){
     cout << "Podaj maksymalna dlugosc podciagu:" << endl;
     cin >> k;
 
-    for (int i = 1; i < std::pow(2, n); i++){
+    for (int i = 1; i < pow(2, n); i++){
         int subset[100];
         int subset_end = 0;
         int a = i;
