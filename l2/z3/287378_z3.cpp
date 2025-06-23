@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
-#include <vector>
 int main(){
-    bool* message;
-    cout << "Podaj sekret (ciag 0/1 o dlugosci 8) oraz wiadomosc (drugi ciag 0/1 o dlugosci 8):" << endl;
+    bool message[16];
+    cout << "Podaj sekret (ciag 0/1 o dlugosci 8) oraz wiadomosc (drugi ciag 0/1 o dlugosci 8): (znaki po spacjach lub enterach)" << endl;
     for(int i = 0; i < 16; i++){
        cin >> message[i];
     }
