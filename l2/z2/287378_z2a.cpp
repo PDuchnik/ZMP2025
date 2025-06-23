@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int length = 0;
     int x;
-    int* numbers;
+    int numbers[1000];
     int buffer;
     cout << "Wpisz liczbe szukana x i dlugosc ciagu n: " << endl;
     cin >> x >> length;
