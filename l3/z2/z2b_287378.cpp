@@ -45,4 +45,5 @@ int main(){
         }
         if (subset_end <= k) print_set(subset, subset_end);
     }
+    cout << "empty" << endl;
 }
