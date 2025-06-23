@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-#include "math.h"
 
 int main(){
     int length;
@@ -20,7 +19,7 @@ int main(){
     bool flag = false;
     float average = 0;
     while(up >= down){
-        average = std::floor((up + down)/2);
+        average = (int)((up + down)/2);
         if(numbers[(int)average] < x){
             down = average + 1;
         }
