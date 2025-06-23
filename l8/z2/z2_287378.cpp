@@ -169,7 +169,10 @@ int main(){
         t2.BSTInsertNode(new Tree(nullptr, nullptr, b[i]));
     }
     if (Tree::IsIsomorphic(&t1, &t2)) cout << "Drzewa sa izomorficzne" << endl;
-    else return 0;
+    else{
+        cout << "nie sa izomorficzne" << endl;
+        return 0;
+    }
     (t1+t2).DisplayTree();
     (t1-t2).DisplayTree();
 }
