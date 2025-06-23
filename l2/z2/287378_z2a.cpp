@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
-#include "math.h"
-#include <string>
-#include <vector>
+
 int main(){
     int length = 0;
     int x;
     int* numbers;
     int buffer;
+    cout << "Wpisz liczbe szukana x i dlugosc ciagu n: " << endl;
     cin >> x >> length;
+    cout << "Wpisz ciag n liczb: " << endl;
     for(int i = 0; i < length; i++){
         cin >> numbers[i];
     }
